@@ -2,7 +2,6 @@
   "name": "explorereact",
   "version": "1.0.0",
   "description": "Exploring How React Works",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -12,14 +11,20 @@
   },
   "author": "Vinit",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "bugs": {
     "url": "https://github.com/Vinit71/ConquerReact/issues"
   },
   "homepage": "https://github.com/Vinit71/ConquerReact#readme",
-  
   "devDependencies": {
-    "parcel": "^2.12.0"
-  }
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 Chrome version",
+    "last 2 Firefox version"
+  ]
 }
-
