@@ -33,8 +33,9 @@ const parent = React.createElement("div", {id: "parent"},
 //this code looks very ugly so we will use 'JSX' to make our life easy.
 //still this is the core of React, JSX just help us to do these things easily
 
+const myJsx = <h1>Hello from JSX and Babel</h1>
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(parent);    //plain js object
+console.log(myJsx);    //plain js object
 
-root.render(parent);
+root.render(myJsx);
