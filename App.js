@@ -1,41 +1,28 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// const heading = React.createElement("h1", {id: "heading"}, "Hello from the React")
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading);
 
+//we can have components inside component
+//we can have componets inside variable/reactElement
 
-// create this structure using React.createElement();
-{/* <div id="parent">
-    <div id="child1">
-        <h1>heading1</h1>
-        <h1>heading2</h1>
-    </div>
-    <div id="child2">
-        <h1>heading1</h1>
-        <h1>heading2</h1>
-    </div>
-</div> */}
-
-const parent = React.createElement("div", {id: "parent"}, 
-    [
-        React.createElement("div", {id: "child1"},
-            [
-                React.createElement("h1", {}, "heading1"), React.createElement("h1", {}, "heading2")
-            ]), 
-            React.createElement("div", {id: "child2"},
-            [
-                React.createElement("h1", {}, "heading1"), React.createElement("h1", {}, "heading2"),
-            ]
-        ) 
-    ]
+//react element
+const heading = (
+    <h1>Hello</h1>
 );
-//this code looks very ugly so we will use 'JSX' to make our life easy.
-//still this is the core of React, JSX just help us to do these things easily
 
-const myJsx = <h1>Hello from JSX and Babel</h1>
+//functional componet 1
+const SmallComponent = ()=>(
+    <h3>Hey i am a small functional component</h3>
+)
+
+//functional component 2 
+const LargeComponent = () =>(
+    <div id="container">
+    {heading}
+    <h1>Hello from the Large functional component</h1>
+    <SmallComponent />
+    </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-console.log(myJsx);    //plain js object
-
-root.render(myJsx);
+root.render(<LargeComponent />);
