@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
+import Header from './Component/Header.js';
 //we can have components inside component
 //we can have componets inside variable/reactElement
 
@@ -11,6 +11,7 @@ const heading = (
 
 //functional componet 1
 const SmallComponent = ()=>(
+    // React.createElement("h3",{}, "i am a small functional component")
     <h3>Hey i am a small functional component</h3>
 )
 
@@ -20,6 +21,7 @@ const LargeComponent = () =>(
     {heading}
     <h1>Hello from the Large functional component</h1>
     <SmallComponent />
+    <Header />
     </div>
 );
 
