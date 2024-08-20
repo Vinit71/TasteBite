@@ -1,0 +1,1 @@
+//for images etc url (hard coded data)

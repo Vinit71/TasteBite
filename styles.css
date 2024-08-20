@@ -1,3 +1,43 @@
-#heading {
-    color: red;
+.navbar {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+     padding: 0 10px;
+}
+
+.links {
+    /* padding: 2px; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    padding: 0 10px;
+}
+
+.card {
+    width: 17rem;
+    background-color: lightcyan;
+    border: 2px solid black;
+    margin: 2px 5px;
+    cursor: pointer;
+}
+
+.cardsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.resImage {
+    width: 17rem;
+    height: 12rem;
 }
