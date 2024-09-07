@@ -118,7 +118,7 @@ let resList2 = [
         }
       },
                  
-                  {
+      {
                     "info": {
                       "id": "51428",
                       "name": "Jalandhar Sweets",
@@ -223,7 +223,8 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
-                  {
+                  
+      {
                     "info": {
                       "id": "254108",
                       "name": "McDonald's",
