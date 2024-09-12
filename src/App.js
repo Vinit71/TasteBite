@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import CustomRouteError from './components/CustomRouteError';
 import RestInfo from './components/RestInfo';
 import RestInfoApi from './components/RestInfoApi';
+import CardsSectionApi from './components/CardsSectionApi.js';
 // import Grocery from "./components/Grocery.js"    **Not this**
 
 const Grocery = lazy(()=> import("./components/Grocery.js"))    //use lazy() to import Component 'dymanically when needed'
@@ -31,6 +32,7 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <CardsSection />,
+        // element: <CardsSectionApi />
       },
       {
         path: "/about",

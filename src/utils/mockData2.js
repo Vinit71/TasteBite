@@ -117,8 +117,8 @@ let resList2 = [
           "type": "DEEPLINK"
         }
       },
-                 
-      {
+                 //{divider}
+                  {
                     "info": {
                       "id": "51428",
                       "name": "Jalandhar Sweets",
@@ -223,8 +223,9 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   
-      {
+                  {
                     "info": {
                       "id": "254108",
                       "name": "McDonald's",
@@ -323,6 +324,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "42802",
@@ -424,6 +426,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "253843",
@@ -514,6 +517,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "42240",
@@ -617,6 +621,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "41297",
@@ -706,6 +711,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "205307",
@@ -817,6 +823,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "696998",
@@ -917,6 +924,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "39842",
@@ -1006,6 +1014,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "785807",
@@ -1099,6 +1108,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "39830",
@@ -1183,6 +1193,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "294349",
@@ -1299,6 +1310,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "60061",
@@ -1398,6 +1410,7 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "762969",
@@ -1486,10 +1499,11 @@ let resList2 = [
                       "type": "DEEPLINK"
                     }
                   },
+                  //{divider}
                   {
                     "info": {
                       "id": "711429",
-                      "name": "Lapp Pino'z Pizza",
+                      "name": "La Pino'z Pizza",
                       "cloudinaryImageId": "5fe4444a065b60c4fe39ef975222c12b",
                       "locality": "Madhya Marg",
                       "areaName": "Sector 8-C",
