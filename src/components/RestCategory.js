@@ -2,13 +2,14 @@ import { useState } from "react";
 import ItemList from "./ItemList";
 
 const RestCategory = (props) => {
-  const { labels, foods } = props;
-  console.log("card", labels);
-  const [showItems, setShowItems] = useState(false);
+  const { labels, foods, showIndex, setShowIndex } = props;
+  // console.log("card", labels);
 
   const clickHandler = () => {
-    setShowItems(!showItems)
+    // setShowItems(!showItems)
+    setShowIndex();
   }
+
   return (
     <>
       {/* Accordion header */}
@@ -23,7 +24,7 @@ const RestCategory = (props) => {
 
         {/* Accordion body */}
         <div className="w-full max-w-4xl px-4">
-          { showItems && <ItemList foods={foods} />}
+          { showIndex && <ItemList foods={foods} />}
         </div>
       </div>
     </>
