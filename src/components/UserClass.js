@@ -8,7 +8,7 @@ class UserClass extends React.Component{
         this.state = {
             userData: {},
         }
-        console.log("Constructor called");   
+        // console.log("Constructor called");   
     }
 
     async componentDidMount(){
@@ -18,22 +18,22 @@ class UserClass extends React.Component{
             userData : jsonData,
         })
 
-        this.interval = setInterval(() => {     //start an interval
-            console.log("Hi");
-        }, 1000);
-        console.log("Component Mount");
+        // this.interval = setInterval(() => {     //start an interval
+        //     console.log("Hi");
+        // }, 1000);
+        // console.log("Component Mount");
     }
 
     componentDidUpdate(){
-        console.log("Component Updated");
+        // console.log("Component Updated");
     }
 
     componentWillUnmount(){
-        console.log("Component UnMounted");
+        // console.log("Component UnMounted");
         clearInterval(this.interval);   //clear interval
     }
     render(){
-        console.log("render");
+        // console.log("render");
         const {name, bio, avatar_url} = this.state.userData;
         return (
             <div className="card-about">

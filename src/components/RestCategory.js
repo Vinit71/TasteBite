@@ -2,11 +2,9 @@ import { useState } from "react";
 import ItemList from "./ItemList";
 
 const RestCategory = (props) => {
-  const { labels, foods, showIndex, setShowIndex } = props;
-  // console.log("card", labels);
+  const { labels, foods, showIndex, setShowIndex, dummy } = props;  //we dont need 'dummy' in this component just need to pass to the ItemList from here.
 
   const clickHandler = () => {
-    // setShowItems(!showItems)
     setShowIndex();
   }
 
@@ -21,10 +19,11 @@ const RestCategory = (props) => {
           <span className="text-2xl font-bold">🔽</span>
         </div>
 
-
         {/* Accordion body */}
-        <div className="w-full max-w-4xl px-4">
-          { showIndex && <ItemList foods={foods} />}
+        <div className="w-full max-w-4xl px-4" onClick={(e)=>{
+          e.stopPropagation();
+        } }>
+          { showIndex && <ItemList foods={foods} dummy={dummy} />}
         </div>
       </div>
     </>

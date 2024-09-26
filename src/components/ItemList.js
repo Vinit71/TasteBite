@@ -1,12 +1,22 @@
 import { IMG_URL } from "../utils/constants";
+import {useDispatch} from "react-redux";
+import { addItem } from "../utils/cartSlice.js";
 //Accordian List
 const ItemList = (props) => {
-  const { foods } = props;
+  const { foods,dummy } = props;
+
+  // console.log(dummy); //finally we have 'dummy' after prop drilling
+
+  const dispatch = useDispatch();
+  const handleAddItmes = (food) =>{
+     dispatch(addItem(food));
+  }
+  
   return (
     <>
       <div className="flex flex-col">
         {foods.map((food, index) => (
-          
+
           <div
             key={index}
             className="flex justify-between items-center px-4 py-2 border-b"
@@ -34,7 +44,7 @@ const ItemList = (props) => {
               )}
 
               {/* Add Button */}
-              <button className="absolute bottom-0 left-0 w-full border border-green-500 bg-slate-50 text-green-600 text-sm rounded-b hover:bg-green-600 hover:text-white">
+              <button className="absolute bottom-0 left-0 w-full border border-green-500 bg-slate-50 text-green-600 text-sm rounded-b hover:bg-green-600 hover:text-white" onClick={()=>handleAddItmes(food)}>
                 Add +
               </button>
             </div>

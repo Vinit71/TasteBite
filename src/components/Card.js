@@ -1,4 +1,6 @@
-import { IMG_URL } from "../utils/constants";
+import { useContext } from "react";
+import { IMG_URL } from "../utils/constants.js";
+import userContext from "../utils/UserContext.js";
 const Card = (props) => {
   const { resData } = props;
   const { name, costForTwo, cuisines, avgRating, cloudinaryImageId } =
@@ -10,6 +12,8 @@ const Card = (props) => {
   } else if (avgRating % 1 == 0) {
     modifiedAvgRating = avgRating + ".0";
   }
+
+  const {userName} = useContext(userContext);
 
   return (
     <div className="border border-black bg-gray-300 w-72 mb-4">
@@ -24,6 +28,7 @@ const Card = (props) => {
       <h2>{costForTwo}</h2>
       <p>{cuisines.join(", ").slice(0, 35) + "..."}</p>
       <h2>{modifiedAvgRating}</h2>
+      <h3>{userName}</h3>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const RestInfo = () => {
   const test2 = resInfoData.find((res) => resId == res.id);
   const { cards } = test2;
 
-  // console.log(cards);
+  const dummy = "Dummy";  //prop drilling example
 
   if (userStatus === false) {
     return (
@@ -28,10 +28,11 @@ const RestInfo = () => {
           key={category.type} //This might cause issue
           labels={category.type}
           foods={category.foods}
-          
+
           //-----uplifting the state up-----
           showIndex = {showIndex == index}
           setShowIndex = {() => setShowIndex(showIndex == index ? null : index)}
+          dummy={dummy}
         />
       ))}
     </div>
