@@ -10,7 +10,7 @@ const NavBar = () => {
   const { userName, userAge } = useContext(userContext);
 
   let cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
+  // console.log(cartItems);
 
   return (
     <div className="flex justify-between bg-orange-400 p-4 text-lg">

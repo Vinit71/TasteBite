@@ -16,7 +16,7 @@ const Card = (props) => {
   const {userName} = useContext(userContext);
 
   return (
-    <div className="border border-black bg-gray-300 w-72 mb-4">
+    <div  data-testid="testCard"  className="border border-black bg-gray-300 w-72 mb-4">
       <img
         className="w-full h-48 object-cover"
         src={IMG_URL + cloudinaryImageId}

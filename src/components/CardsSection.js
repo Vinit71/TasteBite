@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 import userContext from "../utils/UserContext";
 
 const CardsSection = () => {
-  const {userName, userAge, setNameState} = useContext(userContext);  //context
-  
+  const { userName, userAge, setNameState } = useContext(userContext); //context
+
   const [searchFilter, setSearchFilter] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [tempName, setTempName] = useState("");
 
   useEffect(() => {
-    console.log("useEffect called");
+    // console.log("useEffect called");
     // fetchedData();
     localFetchedData();
   }, []);
@@ -70,6 +70,7 @@ const CardsSection = () => {
         <div className="">
           <input
             className="border border-black mr-1"
+            data-testid = "inputSearch"
             type="text"
             value={searchText}
             onChange={(e) => {
@@ -78,6 +79,7 @@ const CardsSection = () => {
           />
           <button
             className="bg-blue-300 text-black border border-black rounded-lg px-4 "
+
             onClick={() => {
               const filterOperation = resList2.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -91,8 +93,18 @@ const CardsSection = () => {
 
         <div>
           <label className="mr-2">User Name: </label>
-          <input className="border border-black p-1" type="text" value={tempName} onChange={(e)=>setTempName(e.target.value)}/>
-          <button className="border border-black bg-blue-600 text-white rounded-lg px-2 py-1 ml-1" onClick={()=> setNameState(tempName)}>Done</button>
+          <input
+            className="border border-black p-1"
+            type="text"
+            value={tempName}
+            onChange={(e) => setTempName(e.target.value)}
+          />
+          <button
+            className="border border-black bg-blue-600 text-white rounded-lg px-2 py-1 ml-1"
+            onClick={() => setNameState(tempName)}
+          >
+            Done
+          </button>
         </div>
       </div>
 
