@@ -28,7 +28,7 @@ const Card = (props) => {
       <h2>{costForTwo}</h2>
       <p>{cuisines.join(", ").slice(0, 35) + "..."}</p>
       <h2>{modifiedAvgRating}</h2>
-      <h3>{userName}</h3>
+      {/* <h3>{userName}</h3> */}
     </div>
   );
 };

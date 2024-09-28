@@ -14,7 +14,6 @@ import userContext from "./utils/UserContext.js";
 import { Provider, useSelector } from "react-redux";
 import appStore from "./utils/appStore.js";
 import Cart from "./components/Cart.js";
-
 // import Grocery from "./components/Grocery.js"    **Not this**
 
 const Grocery = lazy(() => import("./components/Grocery.js")); //use lazy() to import Component 'dymanically when needed'

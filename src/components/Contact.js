@@ -65,17 +65,7 @@ const Contact = () => {
         <div className="mt-8 text-center">
           <p className="text-gray-600">
             Email:{" "}
-            <span className="font-medium text-gray-800">info@company.com</span>
-          </p>
-          <p className="text-gray-600">
-            Phone:{" "}
-            <span className="font-medium text-gray-800">+1 (123) 456-7890</span>
-          </p>
-          <p className="text-gray-600">
-            Address:{" "}
-            <span className="font-medium text-gray-800">
-              123 Street Name, City, Country
-            </span>
+            <span className="font-medium text-gray-800">info@tastebite.com</span>
           </p>
         </div>
       </div>

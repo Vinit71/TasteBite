@@ -92,7 +92,7 @@ const CardsSection = () => {
         </div>
 
         <div>
-          <label className="mr-2">User Name: </label>
+          <label data-testid="doneBtn" className="mr-2">User Name: </label>
           <input
             className="border border-black p-1"
             type="text"

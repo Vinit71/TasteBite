@@ -1,7 +1,6 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import CardsSection from "../CardsSection.js";
 import { BrowserRouter } from "react-router-dom";
-import { act } from "react";
 import "@testing-library/jest-dom";
 
 it("Should test the search functionality", async () => {
